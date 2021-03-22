@@ -273,7 +273,7 @@ section {
 
 .about .content {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   margin-top: 15rem;
 }
@@ -286,6 +286,8 @@ section {
 .about .content .text-box p {
   color: var(--white);
   font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.5;
 }
 
 .about .content .image-box {
@@ -295,6 +297,10 @@ section {
 .about .content .image-box img {
   max-width: 100%;
   border-radius: 8px;
+  height: 40rem;
+  width: 25rem;
+  object-fit: cover;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
 }
 
 /* Services */
@@ -559,5 +565,13 @@ section {
   .services .content .services-box,
   .work .content .work-box {
     margin: 1rem 0;
+  }
+
+  .about .content .image-box img {
+    max-width: 100%;
+    border-radius: 8px;
+    height: 40rem;
+    width: 20rem;
+    object-fit: cover;
   }
 }
